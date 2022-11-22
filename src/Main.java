@@ -1,3 +1,4 @@
+import builder.*;
 import decorator.BasicCloudStream;
 import decorator.CloudStream;
 import decorator.CompressCloudStream;
@@ -31,5 +32,16 @@ public class Main {
         Data.getInstance().setDataValue(10);
         value = Data.getInstance().getDataValue();
         System.out.println("Value " + value);
+
+        // Builder Pattern
+        Director director = new Director();
+        StudentBuilder studentBuilder = new StudentBuilder();
+        ProfessorBuilder professorBuilder = new ProfessorBuilder();
+        director.constructStudent(studentBuilder);
+        director.constructProfessor(professorBuilder);
+        Student student = studentBuilder.getResult();
+        Professor professor = professorBuilder.getResult();
+        System.out.println("Student hours " + student.getHours());
+        System.out.println("Professor hours " + professor.getHours());
     }
 }
