@@ -1,4 +1,4 @@
-package Decorator;
+package decorator;
 
 public abstract class CloudStreamDecorator implements CloudStream {
     private CloudStream cloudStream;

@@ -1,10 +1,10 @@
-import Decorator.BasicCloudStream;
-import Decorator.CloudStream;
-import Decorator.CompressCloudStream;
-import Decorator.EncryptedCloudStream;
+import decorator.BasicCloudStream;
+import decorator.CloudStream;
+import decorator.CompressCloudStream;
+import decorator.EncryptedCloudStream;
 import observer.DataSource;
 import observer.User;
-import Singleton.Data;
+import singleton.Data;
 
 public class Main {
     public static void main(String[] args) {
