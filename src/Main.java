@@ -4,6 +4,7 @@ import Decorator.CompressCloudStream;
 import Decorator.EncryptedCloudStream;
 import observer.DataSource;
 import observer.User;
+import Singleton.Data;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +23,13 @@ public class Main {
         compressedCloudStream.add(basicCloudStream);
         encryptedCloudStream.add(compressedCloudStream);
         encryptedCloudStream.write("123-123-123");
+
+        // Singleton Pattern
+        Data.getInstance().setDataValue(5);
+        int value = Data.getInstance().getDataValue();
+        System.out.println("Value " + value);
+        Data.getInstance().setDataValue(10);
+        value = Data.getInstance().getDataValue();
+        System.out.println("Value " + value);
     }
 }
