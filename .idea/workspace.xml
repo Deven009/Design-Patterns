@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56d24404-9b7f-41ba-92c1-b5a0fe52ee77" name="Changes" comment="Added Singleton Pattern">
-      <change beforePath="$PROJECT_DIR$/src/Decorator/BasicCloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/BasicCloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/CloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/CloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/CloudStreamDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/CloudStreamDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/CompressCloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/CompressCloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/EncryptedCloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/EncryptedCloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singleton/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Data.java" afterDir="false" />
+    <list default="true" id="56d24404-9b7f-41ba-92c1-b5a0fe52ee77" name="Changes" comment="minor refactor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/singleton/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Data.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,21 @@
     "settings.editor.selected.configurable": "Presentation Assistant"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DesignPatterns" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DesignPatterns" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669115230476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="minor refactor">
+      <created>1669115313123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669115313123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Decorator Pattern" />
     <MESSAGE value="Added Singleton Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Singleton Pattern" />
+    <MESSAGE value="minor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
   </component>
 </project>
