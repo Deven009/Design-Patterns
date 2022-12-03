@@ -1,4 +1,8 @@
 import builder.*;
+import chainOfResponsibility.ConcreteHandler;
+import chainOfResponsibility.ConcreteHandler1;
+import chainOfResponsibility.ConcreteHandler2;
+import chainOfResponsibility.Handler;
 import decorator.BasicCloudStream;
 import decorator.CloudStream;
 import decorator.CompressCloudStream;
@@ -43,5 +47,16 @@ public class Main {
         Professor professor = professorBuilder.getResult();
         System.out.println("Student hours " + student.getHours());
         System.out.println("Professor hours " + professor.getHours());
+
+        // Chain Of Responsibility
+        Handler h = new ConcreteHandler();
+        Handler h1 = new ConcreteHandler1();
+        Handler h2 = new ConcreteHandler2();
+        h2.setNext(h1);
+        h1.setNext(h);
+        int []requests = { 2, 5, 14, 22, 18, 3, 27, 20};
+        for(int i=0;i <requests.length; i++) {
+            h2.handleRequest(requests[i]);
+        }
     }
 }
