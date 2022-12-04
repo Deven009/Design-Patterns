@@ -1,3 +1,7 @@
+import bridge.Abstraction;
+import bridge.ConcreteImplementorA;
+import bridge.ConcreteImplementorB;
+import bridge.RefinedAbstraction;
 import builder.*;
 import chainOfResponsibility.ConcreteHandler;
 import chainOfResponsibility.ConcreteHandler1;
@@ -58,5 +62,14 @@ public class Main {
         for(int i=0;i <requests.length; i++) {
             h2.handleRequest(requests[i]);
         }
+
+        // Bridge
+        Abstraction refinedAbstraction = new RefinedAbstraction();
+        refinedAbstraction.setImplementor(new ConcreteImplementorA());
+        refinedAbstraction.performOperation();
+        refinedAbstraction.setImplementor(new ConcreteImplementorB());
+        refinedAbstraction.performOperation();
+
+        // Strategy
     }
 }
