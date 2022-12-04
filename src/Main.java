@@ -14,6 +14,9 @@ import decorator.EncryptedCloudStream;
 import observer.DataSource;
 import observer.User;
 import singleton.Data;
+import strategy.Client;
+import strategy.ConcreteStrategyA;
+import strategy.ConcreteStrategyB;
 
 public class Main {
     public static void main(String[] args) {
@@ -71,5 +74,10 @@ public class Main {
         refinedAbstraction.performOperation();
 
         // Strategy
+        Client client = new Client();
+        client.setStrategy(new ConcreteStrategyA());
+        client.operation();
+        client.setStrategy(new ConcreteStrategyB());
+        client.operation();
     }
 }
